@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+body {
+	margin:0;
+}
+
+/* so that the content stays within the box*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+  background-color:pink;
+}
+
+.wrapper {
+	padding-left:8.33%;
+	padding-right:8.33%;
+}
+
+nav {
+	float:left;
+	padding-top:5px;
+}
+
+nav ul {
+  	list-style-type:none;
+	margin-left:-30px;
+	margin-top:0px;
+}
+
+nav li {
+	float:left;
+  	padding-right:20px;
+}
+
+h1 {
+	float:left;
+	padding-left:10px;
+}
+
+h2 {
+	clear:left;
+}
+
+.bigimage {
+	float:left;
+}
+
+#review {
+	clear:left;
+	float:left;
+}
+
+.center {
+	margin:0 auto;
+	clear:left;
+}
+
+.left {
+	float:left;
+}
+
+.type {
+	clear:left;
+}
+
+.about h2 {
+	margin:0 auto;
+	text-align:center;
+}
+
+.coffee {
+	float:left;
+	clear:left;
+}
+
+#brew-more {
+	float:right;
+	clear:left;
+	margin-right:10%;
+}
+
+.twitter {
+	height:300px;
+}
+
+.instagram img {
+	width:100%;
+}
+
+.social-media {
+	clear:left;
+}
+
+.news img {
+	width:25%;
+}
+
+contact {
+	float:left;
+	background-color:blue;
+}
+
+form [class*='column-'] {
+	float:left;
+	clear:left;
+}
+
+form button {
+	float:left;
+	clear:left;
+}
+
+.map img {
+	width:100%;
+}
+
+.media-icons {
+	margin:0 auto;
+}
+
+footer {
+	clear:left;
+	margin-top:0;
+}
+
+footer img {
+	width:100%;
+}
+
+
+
+/* can add things after every selected element*/
+.grid:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/*this is making the grid expand to contain the floated columns*/
+
+[class*='column-'] {
+  border:1px solid black;
+  margin-top:0;
+}
+
+.column-1-10 {
+  width:10%;
+}
+
+.column-2-10 {
+  width:20%;
+}
+
+.column-3-10 {
+  width:30%;
+}
+
+.column-4-10 {
+  width:40%;
+}
+
+.column-5-10 {
+  width:50%;
+}
+
+.column-6-10 {
+  width:60%;
+}
+
+.column-7-10 {
+  width:70%;
+}
+
+.column-8-10 {
+  width:80%
+}
+
+.column-9-10 {
+  width:90%;
+}
+
+.column-10-10 {
+  width:100%;
+}
+
+.column-3-12 {
+	width:25%;
+}
+
+.column-8-12 {
+	width:66.66%;
+}
+
+
+@media only screen and (max-width: 700px) { 
+	[class*='column-'] {
+  		width:100%;
+		background-color:aqua;
+		margin-bottom:0;
+}
+
+	.wrapper {
+		padding-left:5%;
+		padding-right:5%;
+	}
+	.column-mobile {
+		width:50%;
+	}
+	
+	.logo {
+		float:right;
+	}
+	
+	nav li {
+		clear:left;
+	}
+	
+	.gone {
+		display:none;
+	}
+	
+	.quarter-mobile {
+		width:25%;
+	}
+	
+	#brew-more {
+	float:right;
+	clear:left;
+	}
+	
+		
+/* CSS Document */
+
