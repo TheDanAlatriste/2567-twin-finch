@@ -5,14 +5,11 @@ body {
 }
 
 /* so that the content stays within the box*/
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.grid {
-  background-color:pink;
 }
 
 .wrapper {
@@ -23,6 +20,11 @@ body {
 nav {
 	float:left;
 	padding-top:5px;
+	position:fixed;
+	margin-left:16.66%;
+	background-color:#855F3B;
+	max-width:66.66%;
+	z-index:1;
 }
 
 nav ul {
@@ -39,14 +41,27 @@ nav li {
 h1 {
 	float:left;
 	padding-left:10px;
+	padding-top:30px;
 }
 
 h2 {
 	clear:left;
 }
 
-.bigimage {
+.big-image {
 	float:left;
+	position:relative;
+	margin-bottom:0;
+}
+
+.big-image p {
+	position:absolute;
+	margin-top:-15%;
+	background-color:white;
+	padding-left:10%;
+	padding-right:5%;
+	padding-top:1%;
+	padding-bottom:1%;
 }
 
 #review {
@@ -75,6 +90,18 @@ h2 {
 .coffee {
 	float:left;
 	clear:left;
+}
+
+#cart {
+	width:100%;
+}
+
+#how-to {
+	text-align:center;
+}
+
+#brew {
+	margin:0 auto;
 }
 
 #brew-more {
@@ -130,8 +157,6 @@ footer img {
 	width:100%;
 }
 
-
-
 /* can add things after every selected element*/
 .grid:after {
   content:"";
@@ -142,7 +167,6 @@ footer img {
 /*this is making the grid expand to contain the floated columns*/
 
 [class*='column-'] {
-  border:1px solid black;
   margin-top:0;
 }
 
@@ -198,14 +222,14 @@ footer img {
 @media only screen and (max-width: 700px) { 
 	[class*='column-'] {
   		width:100%;
-		background-color:aqua;
 		margin-bottom:0;
-}
+	}
 
 	.wrapper {
 		padding-left:5%;
 		padding-right:5%;
 	}
+	
 	.column-mobile {
 		width:50%;
 	}
@@ -216,6 +240,10 @@ footer img {
 	
 	nav li {
 		clear:left;
+	}
+	
+	h1 {
+		padding-top:0;
 	}
 	
 	.gone {
@@ -229,8 +257,13 @@ footer img {
 	#brew-more {
 	float:right;
 	clear:left;
+	margin-right:0;
 	}
 	
-		
-/* CSS Document */
+	nav {
+		position:inherit;
+		margin:0 auto;
+		background-color:white;
+	}
 
+}
